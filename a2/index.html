@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="resources/css/rwd.css" type="text/css">
+    <link rel="stylesheet" href="resources/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="resources/css/nav.css" type="text/css">
+    <script src="resources/js/nav.js"></script>
+    <script src="resources/js/jquery-3.2.1.js"></script>
+
+
+</head>
+<body>
+<header class="col-12 col-s-12">
+    <div class="col-10 col-s-12">
+        <a href="index.html" ><img class="col-2" src="resources/images/logo.jpg" id="logo" alt="logo image"></a>
+        <h1 class=" col-8 header-heading">TownsVille Community Music Center INC.</h1>
+
+    </div>
+    <div class="col-2 col-s-12 menu-social-link">
+        <nav>
+            <img src="resources/images/facebook.png" class="social-link-img">
+            <img src="resources/images/insta.png" class="social-link-img">
+            <img src="resources/images/twitter.png" class="social-link-img">
+        </nav>
+    </div>
+</header>
+<!--</div>-->
+<div class="row-custom">
+    <ul class="top-level-menu" id="top_menu">
+        <li><a href="index.html" >Home </a></li>
+        <li>
+            <a href="events.html" >Events</a>
+        </li>
+        <li><a href="bulletinboard.html" >Bulletin Board</a></li>
+        <li><a href="musos.html" >Musos</a></li>
+        <li><a href="members.html" >Members</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="aboutus.html" >About Us</a></li>
+        <li><a href="membershipapplicationform.html" >MemberShip</a></li>
+    </ul>
+</div>
+<br>
+<div class="row-custom" style="background-color: ghostwhite">
+
+    <div class="col-8 col-s-12 slideshow-container slide-images">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="resources/images/Celtic-Fyre-Poster-300.jpg" style="width:100%;" alt="Celtic">
+            <div class="text">Celtic-Fire</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="resources/images/CivicFront600.jpg" style="width:100%" alt="civic">
+            <div class="text">Civic Front</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="resources/images/Stokes.jpg" style="width:100%" alt="stoke">
+            <div class="text">Stokes</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="resources/images/TGOorch300.jpg" style="width:100%" alt="togo">
+            <div class="text">To go</div>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName('mySlides');
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 3000); // Change image every 2 seconds
+            }
+        </script>
+    </div>
+    <div class="col-4 col-s-12 homeside-info">
+
+        <h1 style="font-style: italic;color: red;background-color: darkslategray;font-size: 30px;padding: 3px">New Upcoming Events!!!</h1>
+        <hr>
+
+        <h3>SUNDAY VARIETY CONCERT</h3>
+        <p>
+            Presented by Friends of the Theatre
+            <br>2pm Sunday 26 April at Pimlico Performing Arts Centre
+            Fulham Road
+            <br>
+            Enquiries - <br>
+            please phone 4723 7879
+            Harbourside Duo
+            presents
+            Dream Serenade.
+            Music of Debussy, Ravel, Saint- Saens, Sibelius and others.
+        </p>
+        <h5><a href="events.html">More...</a> </h5>
+    </div>
+
+</div>
+<hr class="hrline">
+
+<div class="row-custom">
+
+    <h1 style="font-style: italic;color: darkslategray">Are you new to Townsville?</h1>
+    <div class="col-4 col-s-12 bodyfont">
+        <p>
+            General information about Townsville is available at -
+            <a href="https://www.townsville.qld.gov.au/townsville/infocentre/Pages/default.aspx">
+                http://www.townsville.qld.gov.au/townsville/infocentre/Pages/default.aspx.</a>
+
+            Townsville has a population of about 200,000 and is growing at about 1 suburb per year, so there is a lot of
+            musical activity. All private schools and most government schools have music teachers. The larger private
+            schools are Townsville Grammar, the Cathedral School and Ryan Catholic College. The larger public high
+            schools are Kirwan and Pimlico.
+        </p>
+        <p>
+            Music Teachers Association of Qld is a good source of information for local music teachers.
+            The Townsville Branch contact is the Secretary (Ms Margery Jorgensen)<br></p>
+        <ul style="list-style: disc">
+            <li>Phone (07) 47790382</li>
+            <li>Email: mjo11750@bigpond.net.au<br></li>
+        </ul>
+
+    </div>
+    <div class="col-4 col-s-12 bodyfont">
+        <p>
+        Another active teachersâ€™ organisation is the Kodaly Music Education Institute of Australia-
+        <a href="www.kodaly.org.au/">www.kodaly.org.au/</a>
+        Information on their Townsville Chapter can be found at -
+        <a href="http://webapps.townsville.qld.gov.au/CommunityDirectory/Organisation/OrganisationDetails/1185">
+            http://webapps.townsville.qld.gov.au/CommunityDirectory/Organisation/OrganisationDetails/1185</a>
+
+        </p>
+        <p>
+            Some local businesses also employ or assist music teachers. Try these -
+            heather@thekeyboardshop.com.au
+            and <a href="www.artiesmusiconline.com.au/">www.artiesmusiconline.com.au/</a>
+
+            Busking is permitted at several public spaces around the city with a Buskers Permit from the city council -
+            phone 4727 9680.
+            There is no age limit, but buskers 16 and under will need to be accompanied by a parent/guardian.
+        </p>
+    </div>
+    <div class="col-4 col-s-12 bodyfont">
+        <h3 style="color: red">*** Notice ***</h3>
+
+<p style="font-size: 16px; font-style: italic">
+    With the support of the Townsville City Council, we work from an office in the Civic Theatre building.
+    (Take the lift near the ticket office to Level 2)
+
+    "Normal" office hours -
+    9.30 -2.30 Monday - Wednesday
+    Any other time just call 0402 255 182***
+</p>
+    </div>
+</div>
+
+
+    <div id="footer">
+        <div class="row-custom">
+            <div class="col-6 col-s-12 footercontent" >
+                <div style="float: left;margin-right: 0%"><h3>Quick Links</h3>
+                    <ul class="down-level-menu">
+                        <li><a href="index.html">Home </a></li>
+                        <li>
+                            <a href="events.html">Events</a>
+                        </li>
+                        <li><a href="bulletinboard.html">Bulletin Board</a></li>
+                        <li><a href="musos.html">Musos</a></li>
+                        <li><a href="members.html">Members</a></li>
+                        <li><a href="sponsors.html">Sponsors</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 col-s-12 footercontent">
+                <h3>Contact Details:-</h3>
+                Phone 07 4724 2086</br>
+                Mobile 0402 255 182</br><br>
+                <div style="font-style: italic">e-mail us with your query</div>
+                Postal Address PO Box 1006, Townsville, Qld 4810</br>
+                Address Townsville Civic Theatre, 41 Boundary Street, Townsville, Qld 4810
+            </div>
+
+        </div>
+
+    </div>
+    <div class="row-header" style="text-align: center;background-color: #0c5460;color: white" >
+        Designed by Group 2
+    </div>
+</body>
+</html>
